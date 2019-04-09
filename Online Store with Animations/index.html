@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- ===========================BootStrap======================== -->	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- ===========================My CSS======================== -->
+							<!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="css/myStyles.css">
+							<!-- Time line -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.roadmap.min.css">
+							<!-- Font Awsome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+							<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<!-- ===========================Google Fonts======================== -->				
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Patua+One" rel="stylesheet">
+	<!-- ===========================Misc Meta======================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="navCart();">
+	<div id="fakeLoader"></div>
+	<!-- ===================Start of the NavBar  ===================-->
+	<!-- Video section for the nav bar  -->
+	<header>
+ 	<section class="masthead">
+		<video class="masthead-video" autoplay loop muted poster="assets/images/poster.jpg">
+		<source src="assets/videos/navbike.mp4" type="video/mp4">
+		</video>
+		<!-- Main text on the nav bar  -->
+		<h1 id="navHeading"><strong id="navHeadingA">Bike</strong> Therapy<hr id="navUnderline"><span>for all your bike needs</span></h1>
+	</section>
+	</header>
+	<!-- start of the actual navBar -->
+		<nav class="sticky stroke">
+		<ul class="strokeSpacing">
+	      <li id="navButtonAnimate"><a href="#navHeading">Home</a></li>
+	      <li id="navButtonAnimate1"><a href="#aboutMarker">About</a></li>
+	      <li id="navButtonAnimate2"><a href="#contactMarker">Contact</a></li>
+	      <li id="navButtonAnimate3"><a href="products.html">Products</a></li>
+	      <li><a href="cart.html"><span id="navCart">0</span><i class="fas fa-shopping-cart">Cart</i></a></li>
+    	</ul>
+		</nav>
+	<!-- ===================End of the NavBar  ===================-->
+	<!-- ===================*Start of main Content*  ===================-->
+	
+	<!-- This is the main container that will contain all the information of the main content section  -->
+	<div class="mainContainer">
+		<!-- first container to introduce the company to the user  -->
+		<div class="introContainer">
+			<h1 id="introHeader"><span id="introRed">Welcome</span> <span id="introGray">to Bike Therapy</span></h1>
+			<div class="introContainerA rounded">
+				<h1 id="containerAHeading"><span id="whiteColor">We do </span><span id="introRed" class="rotate">Repairs,Services,Paint Work,Sales </span></h1>
+			</div>
+    		
+			<div class="introContainerA introContainerB rounded">
+				<h1 id="containerBHeading"><span id="whiteColor">Why pick</span><span id="introGray"> us</span></h1>
+				<ul id="containerBList">
+					<li>We have certified mechanics - meet the staff</li>
+					<li>World class machinery</li>
+					<li>We only use quality certified parts</li>
+					<li>We do every job the right way - no corners cut</li>
+				</ul>
+			</div>
+		</div>
+		<!-- container to contain the gallery -->
+		<div class="galleryContainer rounded">
+		<span id="aboutMarker"> </span>
+			<ul class="gallery-slideshow">
+				<li><img src="assets/images/slideshow1.jpeg"></li>
+				<li><img src="assets/images/slideshow2.jpeg"></li>
+				<li><img src="assets/images/slideshow3.jpeg"></li>
+				<li><img src="assets/images/slideshow5.jpg"></li>
+				<li ><img src="assets/images/slideshow6.jpg"></li>
+			</ul>
+		</div>
+		<span id="aboutMarker"> </span>
+		<!-- container to tell the user about the company -->
+		<div class="aboutUsContainer">
+			<h1 id="aboutHeader" class="aniview" data-av-animation="slideInRight"><span id="introGray">About</span> <span id="introRed"> us</span></h1>
+			<!-- this is too create the timeline -->
+    		<div id="my-timeline"></div>
+		</div>
+		<!--container to allow the user to see more information -->
+		<div class="informationContainer">
+			<div class="informationContainerHeader">
+				<h1 id="generalInformationHeader"><span id="whiteColor">General </span> <span id="introRed"> Information</span></h1>
+	    	</div>
+	    	<div class="informationContainerMain">
+	    		<h1><span id="whiteColor">Contact Number:</span><span id="introRed">072 358 1764</span></h1>
+	    		<h1><span id="whiteColor">Email Address: </span><span id="introRed">dylangardner157@gmail.com</span></h1>
+	    		<h1><span id="whiteColor">Physical address: </span><span id="introRed">22 something carletonville</span></h1>
+	    		<h1><span id="whiteColor">Operating hours: </span> <span id="introRed">7am - 5pm</span></h1>
+	    	</div>
+		</div>
+		<!--container to allow the user to see the google location-->
+		<div class="mapContainer">
+			<iframe src="https://maps.google.com/maps?q=carletonville&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/internetagentur/"></a>
+		</div>
+
+		<!-- container is used to display the contact information -->
+		<span id="contactMarker"> </span>
+		<div class="contactUsContainer">
+			<div class="contactUsHeader">
+				<h1 id="contactUsHeader"><span id="introGray">Contact </span><span id="introRed">Us</span></h1>
+			</div>
+			<div class="contactUsMain">
+			<form>
+				<div class="form-group">
+			    <label for="Full Name">Full Name</label>
+			    <input type="text" class="form-control" id="formName" placeholder="Enter full name">
+			  </div>
+			 <div class="form-group">
+			    <label for="Number">Number</label>
+			    <input type="text" class="form-control" id="formNumber" placeholder="Enter your number">
+			  </div>
+			 <div class="form-group">
+			    <label for="exampleInputEmail1">Email address</label>
+			    <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="Enter email">
+			    <small id="formEmail" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <div class="form-group">
+    			<label for="exampleFormControlTextarea1">Please enter your message </label>
+    			<textarea class="form-control" id="contactMessage" rows="5" placeholder="Please enter in your message/isssue/request"></textarea>
+  				</div>
+  				<div class="form-check">
+			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+			    <label class="form-check-label" for="exampleCheck1">News letter subscribe</label>
+			  </div>
+			  <button type="submit" class="btn btn-danger" id="formSubmit">Submit</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- ===========================My jQuery======================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- ===========================My Javascript======================== -->
+							<!-- Main JS -->
+	<script type="text/javascript" src="javascript/scripts.js"></script>
+							<!-- jQuery time line plugin -->
+	<script type="text/javascript" src="javascript/jquery.roadmap.js"></script>
+</body>
+</html>

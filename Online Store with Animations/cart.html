@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+	<!-- ===========================BootStrap======================== -->	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- ===========================My CSS======================== -->
+							<!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="css/myStyles.css">
+							<!-- time line -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.roadmap.min.css">
+							<!--jQquery Modal -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+							<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+							<!-- Font Awsome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- ===========================Google Fonts======================== -->				
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Patua+One" rel="stylesheet">
+	<!-- ===========================Misc Meta======================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- ===========================Javascript======================== -->
+</head>
+<body onload="displayCart(); navCart();">
+	<div id="fakeLoader"></div>
+	<!-- ===================Start of the NavBar  ===================-->
+	<!-- Video section for the nav bar  -->
+	<header>
+ 	<section class="masthead">
+		<video class="masthead-video" autoplay loop muted poster="assets/images/poster.jpg">
+		<source src="assets/videos/navbike4.mp4" type="video/mp4">
+		</video>
+		<!-- Main text on the nav bar  -->
+		<h1 id="navHeading"><strong id="navHeadingA">Your</strong> Cart<hr id="navUnderline"><span>for all your bike needs</span></h1>
+	</section>
+	</header>
+	<!-- start of the actual navBar -->
+		<nav class="sticky stroke">
+		<ul class="strokeSpacing">
+	      <li id="navButtonAnimate"><a href="index.html">Home</a></li>
+	      <li id="navButtonAnimate1"><a href="index.html#aboutMarker">About</a></li>
+	      <li id="navButtonAnimate2"><a href="index.html#contactMarker">Contact</a></li>
+	      <li id="navButtonAnimate3"><a href="products.html">Products</a></li>
+	      <li><a href="cart.html"><span id="navCart">0</span><i class="fas fa-shopping-cart">Cart</i></a></li>
+    	</ul>
+		</nav>
+	<!-- ===================End of the NavBar  ===================-->
+	<!-- ===================*Start of carts page*  ===================-->
+	
+	<!--End of Navigation Bar -->
+  <div id="cartContainer">
+  	<!-- BootStrap Table -->
+    <div id="cartContainer1">
+  	<table class="table table-hover">
+    <thead class="thead-dark" >
+      <tr>
+        <th scope="col">Product Name</th>
+        <th scope="col">Product Price</th>
+        <th scope="col">Number of Items</th>
+        <th scope="col">Remove Single</th>
+        <th scope="col">Remove all from cart</th>
+      </tr>
+    </thead>
+    <tbody id="cartTable">
+      <th>Order a Product first under the products page</th>
+      <th>  </th>
+      <th></th>
+    </tbody>
+  </table>
+  </div>
+    <div id="cartContainer2">
+      <div id="cartContainer2A">
+        <label for="Coupon Heading" class="col-form-label">Enter In Coupon Code</label><br>
+        <input class="form-control" placeholder="Enter Code" value="" id="couponInput"><br>
+        <button type="button" class="btn btn-success" id="couponButton" onclick="coupon(); displayCart();">Submit Code</button>
+
+      </div>
+      <div id="cartContainer2B">
+      	<button type="button" id="clearCartButton" class="btn btn-danger" onclick="clearCart(); displayCart();">Clear Cart</button><br><br>
+        <h2> Your Total excl VAT <span id="totalAmmount">R0</span></h1>
+          <h2> Your Total incl VAT <span id="vatAmmount">R0</span></h1>
+        <a href="delivery.html"><button type="button" id="deliveryButton" class="btn btn-success">Proceed to checkout</button></a>
+      </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-outline-dark" onclick="closeCalculator();" >Close Calculator</button>
+	<div class="mainContainer">
+
+<!-- Calculator -->
+		<div class="mainContainer1" id="mainContainer1"  >
+			<div class="calculatorContainer" id='calculatorKeys'>
+				<div class="calculatorHeader"><input type="text" id="calculatorScreen" value="" disabled/></div>
+
+				<button type="button" class="btn btn-outline-dark all-clear" value="all-clear">A/C</button>
+				<button type="button" class="btn btn-outline-dark equal-sign operator" value="all-clear">=/-</button>
+				<button type="button" class="btn btn-outline-dark operator" value="/">/</button>
+				<button type="button" class="btn btn-outline-dark equal-sign operator" value="=">=</button>
+
+				<button type="button" class="btn btn-outline-dark" value="7">7</button>
+				<button type="button" class="btn btn-outline-dark" value="8">8</button>
+				<button type="button" class="btn btn-outline-dark" value="9">9</button>
+				<button type="button" class="btn btn-outline-dark operator" value="*">X</button>
+
+				<button type="button" class="btn btn-outline-dark" value="4">4</button>
+				<button type="button" class="btn btn-outline-dark" value="5">5</button>
+				<button type="button" class="btn btn-outline-dark" value="6">6</button>
+				<button type="button" class="btn btn-outline-dark operator" value="-">-</button>
+
+				<button type="button" class="btn btn-outline-dark" value="1">1</button>
+				<button type="button" class="btn btn-outline-dark" value="2">2</button>
+				<button type="button" class="btn btn-outline-dark" value="3">3</button>
+				<button type="button" class="btn btn-outline-dark operator" value="+">+</button>
+
+				<button type="button" class="btn btn-outline-dark" value="0">0</button>
+				<button type="button" class="btn btn-outline-dark" value="0">0</button>
+				<button type="button" class="btn btn-outline-dark decimal" value=".">.</button>
+			</div>
+		</div>
+	</div>
+
+<!-- ===========================My jQuery======================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- ===========================My Javascript======================== -->
+							<!-- Main JS -->
+	<script type="text/javascript" src="javascript/scripts.js"></script>
+							<!-- jQuery time line plugin -->
+	<script type="text/javascript" src="javascript/jquery.roadmap.js"></script>
+							<!-- Caption effect  -->
+	<script src="javascript/toucheffects.js"></script>
+	<script src="javascript/modernizr.custom.js"></script>
+							<!-- jQuery Modal effect  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+</body>
+</html>

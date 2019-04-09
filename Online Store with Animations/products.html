@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title>
+	<!-- ===========================BootStrap======================== -->	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- ===========================My CSS======================== -->
+							<!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="css/myStyles.css">
+							<!-- time line -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.roadmap.min.css">
+							<!--jQquery Modal -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+							<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+							<!-- Font Awsome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- ===========================Google Fonts======================== -->				
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Patua+One" rel="stylesheet">
+	<!-- ===========================Misc Meta======================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- ===========================Javascript======================== -->
+</head>
+<body onload="navCart();">
+	<div id="fakeLoader"></div>
+	<!-- ===================Start of the NavBar  ===================-->
+	<!-- Video section for the nav bar  -->
+	<header>
+ 	<section class="masthead">
+		<video class="masthead-video" autoplay loop muted poster="assets/images/poster.jpg">
+		<source src="assets/videos/navbike2.mp4" type="video/mp4">
+		</video>
+		<!-- Main text on the nav bar  -->
+		<h1 id="navHeading"><strong id="navHeadingA">Products</strong> Page<hr id="navUnderline"><span>for all your bike needs</span></h1>
+	</section>
+	</header>
+	<!-- start of the actual navBar -->
+		<nav class="sticky stroke">
+		<ul class="strokeSpacing">
+	      <li id="navButtonAnimate"><a href="index.html">Home</a></li>
+	      <li id="navButtonAnimate1"><a href="index.html#aboutMarker">About</a></li>
+	      <li id="navButtonAnimate2"><a href="#index.html#contactMarker">Contact</a></li>
+	      <li id="navButtonAnimate3"><a href="#">Products</a></li>
+	      <li><a href="cart.html"><span id="navCart">0</span><i class="fas fa-shopping-cart">Cart</i></a></li>
+    	</ul>
+		</nav>
+	<!-- ===================End of the NavBar  ===================-->
+	<!-- ===================*Start of Products page*  ===================-->
+	
+	<!-- This is the main container that will contain all the information of the products content section  -->
+
+	<!-- **********************************Start of the list of products************************************ -->
+	<div class="productsContainer">
+		<!-- First product -->
+		<div class="productsContainerA rounded">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/gloves_1.png" alt="img04">
+						<figcaption>
+							<h3>Spider Green Gloves</h3>
+							<span>Full Coverage gloves<span><br><br>
+							<a href="#product1" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Second Product -->
+		<div class="productsContainerA ">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/gloves_2.png" alt="img04">
+						<figcaption>
+							<h3>KTM Blue GLoves</h3>
+							<span>Blue KTM full coverage gloves</span>
+							<a href="#product2" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Third Product -->
+		<div class="productsContainerA">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/gloves_3.png" alt="img04">
+						<figcaption>
+							<h3>Razor Green Gloves</h3>
+							<span>Full Coverage Gloves</span>
+							<a href="#product3" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Fourth Product -->
+		<div class="productsContainerA">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/gloves_4.png" alt="img04">
+						<figcaption>
+							<h3>Red Dragon Gloves</h3>
+							<span>Full covarge gloves</span>
+							<a href="#product4" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Fifth Product -->
+		<div class="productsContainerB ">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/gloves_5.png" alt="img04">
+						<figcaption>
+							<h3>Dark Soul Gloves</h3>
+							<span>Full coverage Gloves</span>
+							<a href="#product5" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Sixth Product -->
+		<div class="productsContainerB ">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/helm_1.png" alt="img04">
+						<figcaption>
+							<h3>Free Spirt Helmet</h3>
+							<span>Crash tested Helmet</span>
+							<a href="#product6" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Seventh Product -->
+		<div class="productsContainerB ">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/helm_2.png" alt="img04">
+						<figcaption>
+							<h3>Green Spirt Helmet</h3>
+							<span>Crash test Helmet</span>
+							<a href="#product7" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- eighth Product -->
+		<div class="productsContainerB ">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/helm_3.png" alt="img04">
+						<figcaption>
+							<h3>Red Dragon Helmet</h3>
+							<span>Crash test helmet</span>
+							<a href="#product8" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- ninth Product -->
+		<div class="productsContainerB ">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/helm_4.png" alt="img04">
+						<figcaption>
+							<h3>Mat Black helmet</h3>
+							<span>Full coverage helmet</span>
+							<a href="#product9" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- teneth Product -->
+		<div class="productsContainerB ">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/jacket_2.png" alt="img04">
+						<figcaption>
+							<h3>Mat Black Jacket</h3>
+							<span>Full coverage</span>
+							<a href="#product10" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- eleventh  Product -->
+		<div class="productsContainerB ">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/jacket_3.png" alt="img04">
+						<figcaption>
+							<h3>KTM Pro 2</h3>
+							<span>Jacob Cummings</span>
+							<a href="#product11" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+
+		<!-- twelfth  Product -->
+		<div class="productsContainerB ">
+			<ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="images/jacket_4.png" alt="img04">
+						<figcaption>
+							<h3>Settings</h3>
+							<span>Jacob Cummings</span>
+							<a href="#product12" rel="modal:open">More Information</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- **********************************End of the list of products************************************ -->
+
+	<!-- ===================*Start of modal pop from each product*  ===================-->
+	
+	<!-- Product 1 -->
+	<div id="product1" class="modal">
+	  <h1><span id="whiteColor">Spider Leather</span><span id="introRed"> Gloves</span></h1>
+	  	<ul>
+		<li>Green/Black</li>
+		<li>Full finger coverage</li>
+		<li>Synthetic Leather</li>
+		<li>Breathable Mesh</li>
+		<li>Multiple hard Rubber Knuckle protectoin</li>
+		</ul><br>
+		<p class="productsPrice">R350.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="Spider Green Gloves" data-value2="350" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+
+	<!-- Product 2 -->
+	<div id="product2" class="modal">
+	   <h1><span id="whiteColor">KTM Blue</span><span id="introRed"> Gloves</span></h1>
+	  	<ul>
+		<li>Blue/Black</li>
+		<li>Full finger coverage</li>
+		<li>Synthetic Leather</li>
+		<li>Breathable Mesh</li>
+		<li>Multiple hard Rubber Knuckle protectoin</li>
+		</ul><br>
+		<p class="productsPrice">R450.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="KTM Blue Gloves" data-value2="450" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+
+	<!-- Product 3 -->
+	<div id="product3" class="modal">
+	  <h1><span id="whiteColor">Razor Green Gloves</span><span id="introRed"> Gloves</span></h1>
+	  	<ul>
+		<li>Green</li>
+		<li>Full finger coverage</li>
+		<li>Synthetic Leather</li>
+		<li>Breathable Mesh</li>
+		<li>Multiple hard Rubber Knuckle protectoin</li>
+		</ul><br>
+		<p class="productsPrice">R320.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="Razor Green Gloves" data-value2="320" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+
+	<!-- Product 4 -->
+	<div id="product4" class="modal">
+	  <h1><span id="whiteColor">Red Dragon</span><span id="introRed"> Gloves</span></h1>
+	  	<ul>
+		<li>White/Red </li>
+		<li>Full finger coverage</li>
+		<li>Synthetic Leather</li>
+		<li>Breathable Mesh</li>
+		<li>Multiple hard Rubber Knuckle protectoin</li>
+		</ul><br>
+		<p class="productsPrice">R420.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="Red Dragon Gloves" data-value2="420" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+
+	<!-- Product 5 -->
+	<div id="product5" class="modal">
+	  <h1><span id="whiteColor">Dark Soul</span><span id="introRed"> Gloves</span></h1>
+	  	<ul>
+		<li>Black/Red</li>
+		<li>Full finger coverage</li>
+		<li>Synthetic Leather</li>
+		<li>Breathable Mesh</li>
+		<li>Multiple hard Rubber Knuckle protectoin</li>
+		</ul><br>
+		<p class="productsPrice">R520.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="Dark Soul Gloves" data-value2="520" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+
+	<!-- Product 6 -->
+	<div id="product6" class="modal">
+	<h1><span id="whiteColor">Free Spirt </span><span id="introRed"> helmet</span></h1>
+	  	<ul>
+		<li>Full Face Design</li>
+		<li>ABS material, lightweight</li>
+		<li>Presssure spong liner</li>
+		<li>Single Visor design</li>
+		<li>59 - 60 cm</li><br>
+		<p class="productsPrice">R1520.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="Free Spirt Helmet" data-value2="1520" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+	
+	<!-- Product 7 -->
+	<div id="product7" class="modal">
+	  <h1><span id="whiteColor">Green Spirt </span><span id="introRed"> helmet</span></h1>
+	  	<ul>
+		<li>Full Face Design</li>
+		<li>ABS material, lightweight</li>
+		<li>Presssure spong liner</li>
+		<li>Single Visor design</li>
+		<li>59 - 60 cm</li><br>
+		<p class="productsPrice">R1820.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="Green Spirt Helmet" data-value2="1820" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+
+	<!-- Product 8 -->
+	<div id="product8" class="modal">
+	  <h1><span id="whiteColor">Red Dragon</span><span id="introRed"> helmet</span></h1>
+	  	<ul>
+		<li>Full Face Design</li>
+		<li>ABS material, lightweight</li>
+		<li>Presssure spong liner</li>
+		<li>Single Visor design</li>
+		<li>59 - 60 cm</li><br>
+		<p class="productsPrice">R1220.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="Green Spirt Helmet" data-value2="1220" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+	
+	<!-- Product 9 -->
+	<div id="product9" class="modal">
+	  <h1><span id="whiteColor">Mat Black</span><span id="introRed"> helmet</span></h1>
+	  	<ul>
+		<li>Full Face Design</li>
+		<li>ABS material, lightweight</li>
+		<li>Presssure spong liner</li>
+		<li>Single Visor design</li>
+		<li>59 - 60 cm</li><br>
+		<p class="productsPrice">R1920.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="Mat Black Helmet" data-value2="1920" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+	
+	<!-- Product 10 -->
+	<div id="product10" class="modal">
+	  <h1><span id="whiteColor">Mat Black</span><span id="introRed"> Jacket</span></h1>
+			<ul>
+				<li>Leather</li>
+				<li>Full Jacket</li>
+				<li>Color: Gray and red</li>
+				<li>Full back pads</li>
+				<li>Neck protection</li>
+			</ul><br>
+		<p class="productsPrice">R2220.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="Mat Black Jacket" data-value2="2220" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+
+	<!-- Product 11 -->
+	<div id="product11" class="modal">
+	  <h1><span id="whiteColor">KTM Pro</span><span id="introRed"> Jacket</span></h1>
+			<ul>
+				<li>Leather</li>
+				<li>Full Jacket</li>
+				<li>Color: Gray and white</li>
+				<li>Full back pads</li>
+				<li>Neck protection</li>
+			</ul><br>
+		<p class="productsPrice">R2300.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="KTM Pro 2" data-value2="2300" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+
+	<!-- Product 12 -->
+	<div id="product12" class="modal">
+	  <h1><span id="whiteColor">KTM White</span><span id="introRed"> Jacket</span></h1>
+			<ul>
+				<li>Leather</li>
+				<li>Full Jacket</li>
+				<li>Color: white</li>
+				<li>Full back pads</li>
+				<li>Neck protection</li>
+			</ul><br>
+		<p class="productsPrice">R1800.00</p>
+	  <p><button type="submit" class="btn btn-danger" data-value="KTM White Jacket" data-value2="1800" id="helmets" onclick="productAdd();">Add to cart</button></p>
+	  <a href="#" rel="modal:close" class="modalClose">Close Window</a>
+	</div>
+	
+	<!-- ===================*End of modal pop from each product*  ===================-->
+
+
+
+<!-- ===========================My jQuery======================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- ===========================My Javascript======================== -->
+							<!-- Main JS -->
+	<script type="text/javascript" src="javascript/scripts.js"></script>
+							<!-- jQuery time line plugin -->
+	<script type="text/javascript" src="javascript/jquery.roadmap.js"></script>
+							<!-- Caption effect  -->
+	<script src="javascript/toucheffects.js"></script>
+	<script src="javascript/modernizr.custom.js"></script>
+							<!-- jQuery Modal effect  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+</body>
+</html>

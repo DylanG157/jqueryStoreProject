@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delivery Options</title>
+	<!-- ===========================BootStrap======================== -->	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- ===========================My CSS======================== -->
+							<!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="css/myStyles.css">
+							<!-- time line -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.roadmap.min.css">
+							<!--jQquery Modal -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+							<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+							<!-- Font Awsome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- ===========================Google Fonts======================== -->				
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Patua+One" rel="stylesheet">
+	<!-- ===========================Misc Meta======================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- ===========================Javascript======================== -->
+</head>
+<body onload="navCart();">
+	<div id="fakeLoader"></div>
+	<!-- ===================Start of the NavBar  ===================-->
+	<!-- Video section for the nav bar  -->
+	<header>
+ 	<section class="masthead">
+		<video class="masthead-video" autoplay loop muted poster="assets/images/poster.jpg">
+		<source src="assets/videos/navbike3.mp4" type="video/mp4">
+		</video>
+		<!-- Main text on the nav bar  -->
+		<h1 id="navHeading"><strong id="navHeadingA">Delivery</strong> Options<hr id="navUnderline"><span>for all your bike needs</span></h1>
+	</section>
+	</header>
+	<!-- start of the actual navBar -->
+		<nav class="sticky stroke">
+		<ul class="strokeSpacing">
+	      <li id="navButtonAnimate"><a href="index.html">Home</a></li>
+	      <li id="navButtonAnimate1"><a href="index.html#aboutMarker">About</a></li>
+	      <li id="navButtonAnimate2"><a href="index.html#contactMarker">Contact</a></li>
+	      <li id="navButtonAnimate3"><a href="products.html">Products</a></li>
+	      <li><a href="cart.html"><span id="navCart">0</span><i class="fas fa-shopping-cart">Cart</i></a></li>
+    	</ul>
+		</nav>
+	<!-- ===================End of the NavBar  ===================-->
+	<!-- ===================*Start of carts page*  ===================-->
+	
+	<!--End of Navigation Bar -->
+  <div id="deliveryContainer" >
+  		<div id="deliveryContainer1" class="shadow-lg p-3 mb-5 bg-white rounded" >
+  			<div id="deliveryContainer1Heading">
+  				<h1><span id="introGray">Delivery </span><span id="introRed">Options</span></h1>
+  			</div>
+  			<div id="deliveryContainer1A">
+  				<h2><em id="deliveryOption1">Bronze Package</em> 7-10 Working Days R10</h2>
+  				<h2><em id="deliveryOption2">Silver Package</em> 3-7 Working Days R50</h2>
+  				<h2><em id="deliveryOption3">Gold Package</em>  1-2 Working Days R100</h2><br>
+  				<h1>Select Delivery Option</h1>
+			    <select class="form-control" id="deliveryOption">
+			      <option id="deliveryValue1" value="Bronze Package">Bronze Package</option>
+			      <option id="deliveryValue2" value="Silver Package">Silver Package</option>
+			      <option id="deliveryValue3" value="Gold Package">Gold Package</option>
+			    </select>
+  			</div>
+  			<div id="deliveryContainer1B">
+  				<button type="button" class="btn btn-danger" onclick="saveDeliveryChoice();">Delivery</button>
+  			</div>
+  		</div>
+  		<div id="deliveryContainer2" class="shadow-lg p-3 mb-5 rounded">
+  			<div id=deliveryContainer2AHeading>
+  				<h1><span id="introGray">For </span><span id="introRed">Collection</span></h1>
+  			</div>
+  			<div id="deliveryContainer2A">
+  				<div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=carletonville&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+			</iframe>
+			<a href="https://www.crocothemes.net"></a>
+			</div>
+			</div>
+  			</div>
+  			<div id="deliveryContainer2B">
+  				<a href="collection.html"><button type="button" class="btn btn-danger">Collection</button></a>
+  			</div>
+  		</div>
+	</div>
+
+
+<!-- ===========================My jQuery======================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- ===========================My Javascript======================== -->
+							<!-- Main JS -->
+	<script type="text/javascript" src="javascript/scripts.js"></script>
+							<!-- jQuery time line plugin -->
+	<script type="text/javascript" src="javascript/jquery.roadmap.js"></script>
+							<!-- Caption effect  -->
+	<script src="javascript/toucheffects.js"></script>
+	<script src="javascript/modernizr.custom.js"></script>
+							<!-- jQuery Modal effect  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+</body>
+</html>
